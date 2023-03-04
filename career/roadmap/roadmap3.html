@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Third Year Roadmap</title>
+        <link rel="shortcut icon" href="../../../Assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="roadmap.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+      <nav>
+         <div class="logo-box">
+             <img src="../../../Assets/logo.png" alt="logo" class="logo">
+         </div>
+ 
+         <a href="../year_career.php">
+             <button class="back">
+                 <!-- <i class="fa-solid fa-bars bar"></i> -->
+                 <!-- <i class="fa-solid fa-x cross"></i> -->
+                 <i class="fa-solid fa-arrow-left"></i>
+                 <span>BACK</span>
+             </button>
+         </a>
+     </nav>
+
+
+      <section id="full">
+
+      <div id="parallax" class="parallax-item">
+         <h1>ROADMAP FOR CSE THIRD YEAR</h1>
+      </div>
+
+      <div class="container">
+            <br><br><br><br>
+            <div class="box show box1">
+                <h2>Start DSA if not yet started or if completed then revise it(MUST)</h2>
+             </div>
+        
+             <div class=" item scrollFade">
+              <img src="motorway.png" width="200px" height="200px" >
+             </div>
+        
+             <div class="box show box2">
+                <h2>Topics need to be covered in DSA are:- <br>
+                    Arrays,Strings,Linked List,Recursion,DP,Trees,Graphsand SOLVE QUESTIONS!!
+                </h2>
+             </div>
+        
+             <div class=" item scrollFade">
+                <img src="motorway.png" width="200px" height="200px">
+               </div>
+    
+             <div class="box show box3">
+                <h2>Learn skills(soft and hard both) and new Technologies </h2>
+             </div>
+
+            
+        
+            <div class=" item scrollFade">
+              <img src="motorway.png" width="200px" height="200px" >
+             </div>
+        
+             <div class="box show box4">
+                <h2>Try to solve interview questions and puzzles(Eg from AMAZON,GOOGLE,MICROSOFT)</h2>
+             </div>
+        
+             <div class="  item scrollFade">
+                <img src="motorway.png" width="200px" height="200px" >
+               </div>
+        
+        
+        
+        
+             <div class="box box1">
+                <h2>Make some good projects and deploy them(WEB DEV,DATA SCIENCE,ML)</h2>
+             </div>
+        
+             <div class="  item scrollFade">
+                <img src="motorway.png" width="200px" height="200px" >
+               </div>
+        
+             <div class="box box2">
+                <h2>Contribute in open source programs
+                 </h2>
+             </div>
+        
+             <div class="  item scrollFade">
+                <img src="motorway.png" width="200px" height="200px" >
+               </div>
+        
+             <div class="box box3">
+                <h2>People who are good in PROBLEM SOLVING skills they should participate in contests and Competetive Programming<br>
+                Code Jam<br>
+                HackerRank<br>
+                Leetcode<br>
+                HackerEarth etc.</h2>
+             </div>
+        
+             <div class=" item scrollFade">
+                <img src="motorway.png" width="200px" height="200px" >
+               </div>
+    
+    
+             <div class="box box4">
+                <h2>Computer Network(CN) subject of 5th SEM syllabus is very important from the POV of Interviews.
+                </h2>
+             </div>
+        
+            <div class="  item scrollFade">
+              <img src="motorway.png"  width="200px" height="200px" >
+             </div>
+            
+        
+        
+        
+             <div class="box box1">
+                <h2>Be good at the fundamental concepts of Aptitude,OS,DBMS and CN</h2>
+             </div>
+        
+             <div class="  item scrollFade">
+                <img src="motorway.png" width="200px" height="200px" >
+               </div>
+        
+             <div class="box box2">
+                <h2>This year is overall very important in terms of college academics and for getting placed in good company for internships
+                 </h2>
+             </div>
+        
+             <div class="  item scrollFade">
+                <img src="motorway.png" width="200px" height="200px" >
+               </div>
+             
+        
+             <div class="box box3">
+                <h2>Subjects are tough but important also to maintain good CGPA of 7.5 .Focus and determination is highly required in Third Year </h2>
+             </div>
+        
+             <div class="  item scrollFade">
+                <img src="motorway.png" width="200px" height="200px">
+               </div>
+        
+             <div class="box box4">
+                <h2>Make your CV and apply for Internships</h2>
+             </div>
+        
+        
+        </div>
+      </section>
+      
+        <!-- js to fade in and out elements -->
+        <script >
+         var fadeElements = document.getElementsByClassName('scrollFade');
+
+function scrollFade() {
+  var viewportBottom = window.scrollY + window.innerHeight/5*4;
+
+  for (var index = 0; index < fadeElements.length; index++) {
+    var element = fadeElements[index];
+    var rect = element.getBoundingClientRect();
+
+    var elementFourth = rect.height/4;
+    var fadeInPoint = window.innerHeight - elementFourth;
+    var fadeOutPoint = -(rect.height/2);
+
+    if (rect.top <= fadeInPoint) {
+      element.classList.add('scrollFade--visible');
+      element.classList.add('scrollFade--animate');
+      element.classList.remove('scrollFade--hidden');
+    } else {
+      element.classList.remove('scrollFade--visible');
+      element.classList.add('scrollFade--hidden');
+    }
+
+    if (rect.top <= fadeOutPoint) {
+      element.classList.remove('scrollFade--visible');
+      element.classList.add('scrollFade--hidden');
+    }
+  }
+}
+
+document.addEventListener('scroll', scrollFade);
+window.addEventListener('resize', scrollFade);
+document.addEventListener('DOMContentLoaded', function() {
+  scrollFade();
+});
+        </script>
+
+<!-- js code to translate the elements -->
+        <script lang="JavaScript">
+        const boxes = document.querySelectorAll('.box');
+
+        window.addEventListener('scroll',checkBoxes);
+
+            function checkBoxes(){
+                const triggerBottom =( window.innerHeight/5)*4;
+            
+                boxes.forEach(box =>{
+                    const boxTop = box.getBoundingClientRect().top;
+            
+                    if (boxTop < triggerBottom)
+                    {
+                        box.classList.add('show');
+                    }
+                    else{
+                        box.classList.remove('show');
+                    }
+                });
+                
+            } 
+            
+           checkBoxes();
+            </script>
+
+
+         <!-- js code to introduce parallax effect -->
+         <script lang="JavaScript">
+         const parallax = document.getElementById("parallax");
+
+// Parallax Effect for DIV 1
+window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = offset * 0.7 + "px";
+});
+
+
+</script>
+
+            		
+
+   
+    </body>
+</html>

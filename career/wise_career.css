@@ -1,0 +1,244 @@
+/* Import URL */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --lightblue: #DBE2EF;
+  --blue: #3F72AF;
+  --darkblue: #112D4E;
+  --cream: #F9F7F7;
+} 
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--darkblue);
+  background: var(--lightblue);
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  padding: 10px 10px 0;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* height: 10px; */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--darkblue);
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 16px;
+  /* background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111); */
+}
+
+nav {
+  /* border: 1px solid black; */
+  /* position: relative; */
+  margin: 0px 0px 30px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* * from ngen */
+  border-radius: 10px;
+  background: #DBE2EF;
+  box-shadow:  15px 15px 30px #afb5bf,
+              -15px -15px 30px #ffffff;
+  /* z-index: 1; */
+}
+
+nav .logo-box  {
+  cursor: pointer;
+  align-self: flex-start;
+  margin-left: 20px;
+  /* display  : none; */
+}
+
+nav .logo-box .logo {
+  width: 250px;
+  height: auto;
+}
+
+nav .back {
+  cursor: pointer;
+  border: none;
+  /* display: none; */
+  align-self: flex-end;
+  /* position: sticky;
+  top: 0px;
+  z-index: 3; */
+  font-size: 15px;
+  font-weight: 200;
+  /* margin-right: 20px; */
+  padding: 5px 10px;
+  /* border: 1px solid black; */
+  background: var(--lightblue);
+  background-color: white;
+  /* * form ngen */
+  border-radius: 100px;
+  box-shadow:  5px 5px 20px #999ea7,
+              -5px -5px 20px #ffffff;
+
+  /* margin-bottom: 30px; */
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+nav .back:active {
+  background: linear-gradient(145deg, #c5cbd7, #eaf2ff);
+  box-shadow: 5px 5px 20px #999ea7,
+              -5px -5px 20px #ffffff;
+}
+
+nav .back:hover {
+  background-color: var(--blue);
+  box-shadow: 0px 5px 20px var(--blue);
+  color: var(--cream);
+  /* transform: translateY(-7px); */
+}
+
+/* nav .back  {
+  font-size: 15px;
+} */
+
+nav a {
+  margin-right: 20px;
+}
+
+nav .title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.screen {
+  margin: 0 0 30px 0;
+  padding: 0 100px;
+  /* border: 1px solid black; */
+}
+
+.screen .info {
+  margin: 40px 0 20px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 400;
+  justify-self: center;
+}
+
+.screen .info h1 {
+  /* font-size: 17px; */
+  /* font-weight: 500; */
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.sem {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  padding: 20px 20px 20px;
+  align-items: center;
+}
+
+.sem .sem-box {
+  padding: 10px;
+  margin: 10px 20px;
+  width: 300px;
+  /* height: 400px; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  background: var(--lightblue);
+  box-shadow:  20px 20px 60px #bac0cb,
+              -20px -20px 60px #fcffff;
+}
+
+.sem .sem-box .img {
+  width: 100%;
+  height: 200px;
+ /* //////////// border-top-right-radius: 50px;
+  ////////////////// border-top-left-radius: 50px; */
+  border-radius: 50px;
+  background-image: url(../../Assets/career/c1.jpg);
+  background-position: center;
+  background-size: cover;
+} 
+
+.sem .sem-box .imgd {
+  width: 100%;
+  height: 150px;
+ /* //////////// border-top-right-radius: 50px;
+  ////////////////// border-top-left-radius: 50px; */
+  border-radius: 50px;
+  background-image: url(../../Assets/career/c2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.sem .sem-box .title {
+  margin: 20px 10px 10px;
+  font-size: 25px;
+}
+
+.sem .sem-box p {
+  margin: 10px 0px 30px;
+
+}
+
+.sem .sem-box button {
+  margin-bottom: 30px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.sem .sem-box button:active {
+  background: linear-gradient(145deg, #c5cbd7, #eaf2ff);
+  box-shadow: 5px 5px 20px #999ea7,
+              -5px -5px 20px #ffffff;
+
+}
+
+.sem .sem-box button:hover {
+  background-color: var(--blue);
+  box-shadow: 0px 5px 20px var(--blue);
+  color: var(--cream);
+  transform: translateY(-7px);
+}
